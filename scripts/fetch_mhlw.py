@@ -103,14 +103,14 @@ def process_file(url: str, date: str, debug: bool) -> dict:
 def main(debug=False):
     os.makedirs('data', exist_ok=True)
     os.makedirs('cache', exist_ok=True)
-    oldhash = None
+    hashes = set()
     if os.path.exists('cache/mhlw_hospitalization.hash'):
-        oldhash = open('cache/mhlw_hospitalization.hash').read().strip()
-    response = requests.get(METADATA["source_url"]).content
-    newhash = hashlib.sha1(response).hexdigest()
-    response = response.decode('utf-8')
+        hashes = set(open('cache/mhlw_hospitalization.hash').read().strip().split('\n'))
+    content = requests.get(METADATA["source_url"]).content
+    newhash = hashlib.sha1(content).hexdigest()
+    response = content.decode('utf-8')
 
-    if oldhash == newhash:
+    if newhash in hashes:
         return
 
     soup = BeautifulSoup(response, features='lxml')
@@ -142,7 +142,8 @@ def main(debug=False):
     df = pd.DataFrame.from_records(records)
     csv = df.to_csv()
     open('data/mhlw_hospitalization.csv', 'w').write(csv)
-    open('cache/mhlw_hospitalization.hash', 'w').write(newhash)
+    hashes.add(newhash)
+    open('cache/mhlw_hospitalization.hash', 'w').write('\n'.join(list(hashes)))
 
 
 if __name__ == "__main__":
