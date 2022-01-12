@@ -1,0 +1,33 @@
+name: Gen from MHLW
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: 30 2 * * *
+
+jobs:
+  build:
+    name: Gen from MHLW
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    - run: |
+        pip install requests beautifulsoup4 tabula-py pandas lxml openpyxl
+    - run: |
+        mkdir -p data
+    - run: |
+        python scripts/fetch_mhlw.py > data/mhlw_hospitalization.csv
+    - run: |
+        git config user.name "Github Actions"
+        git add data/mhlw_hospitalization.csv
+        git commit -m 'update data/mhlw_hospitalization.csv' || true
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
