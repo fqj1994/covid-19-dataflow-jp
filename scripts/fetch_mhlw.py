@@ -71,6 +71,7 @@ def process_file(url: str, date: str, debug: bool) -> dict:
                 "indicator": "Daily hospital occupancy",
                 "value": int(hospitalized),
                 "entity": METADATA["entity"],
+                "source": url,
             })
         except ValueError:
             pass
@@ -86,13 +87,14 @@ def process_file(url: str, date: str, debug: bool) -> dict:
                 "indicator": "Daily ICU occupancy",
                 "value": int(critical),
                 "entity": METADATA["entity"],
+                "source": url,
             })
         except ValueError:
             pass
 
 
     if debug:
-        print(date, url, '\n', ret)
+        print(date, url, '\n', ret, file=sys.stderr)
     return ret
 
 
@@ -129,7 +131,4 @@ def main(debug=False):
 
 
 if __name__ == "__main__":
-    if 'v' in sys.argv[1:]:
-        print(main(debug=True)[0].to_string())
-    else:
-        print(main()[0].to_csv())
+    print(main(debug=True)[0].to_csv())
