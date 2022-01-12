@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: 30 2 * * *
+    - cron: 0 * * * *
 
 jobs:
   build:
@@ -22,10 +22,10 @@ jobs:
     - run: |
         mkdir -p data
     - run: |
-        python scripts/fetch_mhlw.py > data/mhlw_hospitalization.csv
+        python scripts/fetch_mhlw.py
     - run: |
         git config user.name "Github Actions"
-        git add data/mhlw_hospitalization.csv
+        git add data/mhlw_hospitalization.csv cache/mhlw_hospitalization.hash
         git commit -m 'update data/mhlw_hospitalization.csv' || true
     - uses: ad-m/github-push-action@master
       with:

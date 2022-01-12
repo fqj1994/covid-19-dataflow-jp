@@ -1,6 +1,8 @@
 # Based on https://github.com/owid/covid-19-data/blob/db830e448607de47c8430f9122bcd72b0acce4fd/scripts/src/cowidev/hosp/sources/japan.py
 
 import datetime
+import hashlib
+import os
 import re
 import requests
 import sys
@@ -99,7 +101,18 @@ def process_file(url: str, date: str, debug: bool) -> dict:
 
 
 def main(debug=False):
-    response = requests.get(METADATA["source_url"]).content.decode("utf-8")
+    os.makedirs('data', exist_ok=True)
+    os.makedirs('cache', exist_ok=True)
+    oldhash = None
+    if os.path.exists('cache/mhlw_hospitalization.hash'):
+        oldhash = open('cache/mhlw_hospitalization.hash').read().strip()
+    response = requests.get(METADATA["source_url"]).content
+    newhash = hashlib.sha1(response).hexdigest()
+    response = response.decode('utf-8')
+
+    if oldhash == newhash:
+        return
+
     soup = BeautifulSoup(response, features='lxml')
 
     groups = []
@@ -127,8 +140,10 @@ def main(debug=False):
         records.extend(process_file("https://www.mhlw.go.jp" + path, date, debug))
 
     df = pd.DataFrame.from_records(records)
-    return df, METADATA
+    csv = df.to_csv()
+    open('data/mhlw_hospitalization.csv', 'w').write(csv)
+    open('cache/mhlw_hospitalization.hash', 'w').write(newhash)
 
 
 if __name__ == "__main__":
-    print(main(debug=True)[0].to_csv())
+    main(debug=True)
