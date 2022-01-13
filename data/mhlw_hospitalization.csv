@@ -1,178 +1,90 @@
-,date,indicator,value,entity,source
-0,2020-04-28,Daily hospital occupancy,5514,Japan,https://www.mhlw.go.jp/content/10900000/000633758.pdf
-1,2020-05-07,Daily hospital occupancy,4436,Japan,https://www.mhlw.go.jp/content/10900000/000633755.pdf
-2,2020-05-07,Daily ICU occupancy,341,Japan,https://www.mhlw.go.jp/content/10900000/000633755.pdf
-3,2020-05-13,Daily hospital occupancy,3423,Japan,https://www.mhlw.go.jp/content/10900000/000631948.pdf
-4,2020-05-13,Daily ICU occupancy,251,Japan,https://www.mhlw.go.jp/content/10900000/000631948.pdf
-5,2020-05-21,Daily hospital occupancy,2058,Japan,https://www.mhlw.go.jp/content/10900000/000633020.pdf
-6,2020-05-21,Daily ICU occupancy,184,Japan,https://www.mhlw.go.jp/content/10900000/000633020.pdf
-7,2020-05-27,Daily hospital occupancy,1369,Japan,https://www.mhlw.go.jp/content/10900000/000635319.pdf
-8,2020-05-27,Daily ICU occupancy,143,Japan,https://www.mhlw.go.jp/content/10900000/000635319.pdf
-9,2020-06-03,Daily hospital occupancy,1015,Japan,https://www.mhlw.go.jp/content/10900000/000637508.pdf
-10,2020-06-03,Daily ICU occupancy,101,Japan,https://www.mhlw.go.jp/content/10900000/000637508.pdf
-11,2020-06-10,Daily hospital occupancy,781,Japan,https://www.mhlw.go.jp/content/10900000/000639642.pdf
-12,2020-06-10,Daily ICU occupancy,88,Japan,https://www.mhlw.go.jp/content/10900000/000639642.pdf
-13,2020-06-17,Daily hospital occupancy,587,Japan,https://www.mhlw.go.jp/content/10900000/000641924.pdf
-14,2020-06-17,Daily ICU occupancy,70,Japan,https://www.mhlw.go.jp/content/10900000/000641924.pdf
-15,2020-06-24,Daily hospital occupancy,559,Japan,https://www.mhlw.go.jp/content/10900000/000644284.pdf
-16,2020-06-24,Daily ICU occupancy,58,Japan,https://www.mhlw.go.jp/content/10900000/000644284.pdf
-17,2020-07-01,Daily hospital occupancy,696,Japan,https://www.mhlw.go.jp/content/10900000/000646554.pdf
-18,2020-07-01,Daily ICU occupancy,40,Japan,https://www.mhlw.go.jp/content/10900000/000646554.pdf
-19,2020-07-08,Daily hospital occupancy,1039,Japan,https://www.mhlw.go.jp/content/10900000/000650177.pdf
-20,2020-07-08,Daily ICU occupancy,36,Japan,https://www.mhlw.go.jp/content/10900000/000650177.pdf
-21,2020-07-15,Daily hospital occupancy,1717,Japan,https://www.mhlw.go.jp/content/10900000/000650176.pdf
-22,2020-07-15,Daily ICU occupancy,41,Japan,https://www.mhlw.go.jp/content/10900000/000650176.pdf
-23,2020-07-22,Daily hospital occupancy,2744,Japan,https://www.mhlw.go.jp/content/10900000/000652009.pdf
-24,2020-07-22,Daily ICU occupancy,54,Japan,https://www.mhlw.go.jp/content/10900000/000652009.pdf
-25,2020-07-29,Daily hospital occupancy,4034,Japan,https://www.mhlw.go.jp/content/10900000/000655343.pdf
-26,2020-07-29,Daily ICU occupancy,92,Japan,https://www.mhlw.go.jp/content/10900000/000655343.pdf
-27,2020-08-05,Daily hospital occupancy,5116,Japan,https://www.mhlw.go.jp/content/10900000/000657845.pdf
-28,2020-08-05,Daily ICU occupancy,117,Japan,https://www.mhlw.go.jp/content/10900000/000657845.pdf
-29,2020-08-12,Daily hospital occupancy,6009,Japan,https://www.mhlw.go.jp/content/10900000/000659470.pdf
-30,2020-08-12,Daily ICU occupancy,192,Japan,https://www.mhlw.go.jp/content/10900000/000659470.pdf
-31,2020-08-19,Daily hospital occupancy,5973,Japan,https://www.mhlw.go.jp/content/10900000/000661845.pdf
-32,2020-08-19,Daily ICU occupancy,277,Japan,https://www.mhlw.go.jp/content/10900000/000661845.pdf
-33,2020-08-26,Daily hospital occupancy,5576,Japan,https://www.mhlw.go.jp/content/10900000/000664827.pdf
-34,2020-08-26,Daily ICU occupancy,333,Japan,https://www.mhlw.go.jp/content/10900000/000664827.pdf
-35,2020-09-02,Daily hospital occupancy,4994,Japan,https://www.mhlw.go.jp/content/10900000/000694899.pdf
-36,2020-09-02,Daily ICU occupancy,324,Japan,https://www.mhlw.go.jp/content/10900000/000694899.pdf
-37,2020-09-09,Daily hospital occupancy,4174,Japan,https://www.mhlw.go.jp/content/10900000/000694897.pdf
-38,2020-09-09,Daily ICU occupancy,315,Japan,https://www.mhlw.go.jp/content/10900000/000694897.pdf
-39,2020-09-16,Daily hospital occupancy,3754,Japan,https://www.mhlw.go.jp/content/10900000/000694896.pdf
-40,2020-09-16,Daily ICU occupancy,316,Japan,https://www.mhlw.go.jp/content/10900000/000694896.pdf
-41,2020-09-23,Daily hospital occupancy,3601,Japan,https://www.mhlw.go.jp/content/10900000/000694895.pdf
-42,2020-09-23,Daily ICU occupancy,310,Japan,https://www.mhlw.go.jp/content/10900000/000694895.pdf
-43,2020-09-30,Daily hospital occupancy,3249,Japan,https://www.mhlw.go.jp/content/10900000/000694894.pdf
-44,2020-09-30,Daily ICU occupancy,292,Japan,https://www.mhlw.go.jp/content/10900000/000694894.pdf
-45,2020-10-07,Daily hospital occupancy,2963,Japan,https://www.mhlw.go.jp/content/10900000/000694893.pdf
-46,2020-10-07,Daily ICU occupancy,296,Japan,https://www.mhlw.go.jp/content/10900000/000694893.pdf
-47,2020-10-14,Daily hospital occupancy,3040,Japan,https://www.mhlw.go.jp/content/10900000/000694892.pdf
-48,2020-10-14,Daily ICU occupancy,317,Japan,https://www.mhlw.go.jp/content/10900000/000694892.pdf
-49,2020-10-21,Daily hospital occupancy,2966,Japan,https://www.mhlw.go.jp/content/10900000/000694891.pdf
-50,2020-10-21,Daily ICU occupancy,279,Japan,https://www.mhlw.go.jp/content/10900000/000694891.pdf
-51,2020-10-28,Daily hospital occupancy,3108,Japan,https://www.mhlw.go.jp/content/10900000/000694889.pdf
-52,2020-10-28,Daily ICU occupancy,290,Japan,https://www.mhlw.go.jp/content/10900000/000694889.pdf
-53,2020-11-04,Daily hospital occupancy,3495,Japan,https://www.mhlw.go.jp/content/10900000/000694888.pdf
-54,2020-11-04,Daily ICU occupancy,319,Japan,https://www.mhlw.go.jp/content/10900000/000694888.pdf
-55,2020-11-11,Daily hospital occupancy,4484,Japan,https://www.mhlw.go.jp/content/10900000/000694900.pdf
-56,2020-11-11,Daily ICU occupancy,388,Japan,https://www.mhlw.go.jp/content/10900000/000694900.pdf
-57,2020-11-18,Daily hospital occupancy,5951,Japan,https://www.mhlw.go.jp/content/10900000/000697184.pdf
-58,2020-11-18,Daily ICU occupancy,483,Japan,https://www.mhlw.go.jp/content/10900000/000697184.pdf
-59,2020-11-25,Daily hospital occupancy,7826,Japan,https://www.mhlw.go.jp/content/10900000/000699463.pdf
-60,2020-11-25,Daily ICU occupancy,682,Japan,https://www.mhlw.go.jp/content/10900000/000699463.pdf
-61,2020-12-02,Daily hospital occupancy,8488,Japan,https://www.mhlw.go.jp/content/10900000/000703096.pdf
-62,2020-12-02,Daily ICU occupancy,785,Japan,https://www.mhlw.go.jp/content/10900000/000703096.pdf
-63,2020-12-09,Daily hospital occupancy,9222,Japan,https://www.mhlw.go.jp/content/10900000/000705462.pdf
-64,2020-12-09,Daily ICU occupancy,842,Japan,https://www.mhlw.go.jp/content/10900000/000705462.pdf
-65,2020-12-16,Daily hospital occupancy,10047,Japan,https://www.mhlw.go.jp/content/10900000/000707318.pdf
-66,2020-12-16,Daily ICU occupancy,3575,Japan,https://www.mhlw.go.jp/content/10900000/000707318.pdf
-67,2020-12-23,Daily hospital occupancy,10470,Japan,https://www.mhlw.go.jp/content/10900000/000717219.xlsx
-68,2020-12-23,Daily ICU occupancy,1017,Japan,https://www.mhlw.go.jp/content/10900000/000717219.xlsx
-69,2020-12-30,Daily hospital occupancy,11585,Japan,https://www.mhlw.go.jp/content/10900000/000717220.xlsx
-70,2020-12-30,Daily ICU occupancy,1106,Japan,https://www.mhlw.go.jp/content/10900000/000717220.xlsx
-71,2021-01-06,Daily hospital occupancy,13093,Japan,https://www.mhlw.go.jp/content/10900000/000721071.xlsx
-72,2021-01-06,Daily ICU occupancy,1224,Japan,https://www.mhlw.go.jp/content/10900000/000721071.xlsx
-73,2021-01-13,Daily hospital occupancy,14825,Japan,https://www.mhlw.go.jp/content/10900000/000721104.xlsx
-74,2021-01-13,Daily ICU occupancy,1424,Japan,https://www.mhlw.go.jp/content/10900000/000721104.xlsx
-75,2021-01-20,Daily hospital occupancy,14724,Japan,https://www.mhlw.go.jp/content/10900000/000731213.xlsx
-76,2021-01-20,Daily ICU occupancy,1505,Japan,https://www.mhlw.go.jp/content/10900000/000731213.xlsx
-77,2021-01-27,Daily hospital occupancy,14417,Japan,https://www.mhlw.go.jp/content/10900000/000731216.xlsx
-78,2021-01-27,Daily ICU occupancy,1569,Japan,https://www.mhlw.go.jp/content/10900000/000731216.xlsx
-79,2021-02-03,Daily hospital occupancy,13489,Japan,https://www.mhlw.go.jp/content/10900000/000735169.xlsx
-80,2021-02-03,Daily ICU occupancy,1439,Japan,https://www.mhlw.go.jp/content/10900000/000735169.xlsx
-81,2021-02-10,Daily hospital occupancy,11325,Japan,https://www.mhlw.go.jp/content/10900000/000738342.xlsx
-82,2021-02-10,Daily ICU occupancy,1232,Japan,https://www.mhlw.go.jp/content/10900000/000738342.xlsx
-83,2021-02-17,Daily hospital occupancy,9575,Japan,https://www.mhlw.go.jp/content/10900000/000749641.xlsx
-84,2021-02-17,Daily ICU occupancy,1020,Japan,https://www.mhlw.go.jp/content/10900000/000749641.xlsx
-85,2021-02-24,Daily hospital occupancy,8032,Japan,https://www.mhlw.go.jp/content/10900000/000749622.xlsx
-86,2021-02-24,Daily ICU occupancy,820,Japan,https://www.mhlw.go.jp/content/10900000/000749622.xlsx
-87,2021-03-03,Daily hospital occupancy,6683,Japan,https://www.mhlw.go.jp/content/10900000/000749619.xlsx
-88,2021-03-03,Daily ICU occupancy,739,Japan,https://www.mhlw.go.jp/content/10900000/000749619.xlsx
-89,2021-03-10,Daily hospital occupancy,5947,Japan,https://www.mhlw.go.jp/content/10900000/000753067.xlsx
-90,2021-03-10,Daily ICU occupancy,659,Japan,https://www.mhlw.go.jp/content/10900000/000753067.xlsx
-91,2021-03-17,Daily hospital occupancy,5895,Japan,https://www.mhlw.go.jp/content/10900000/000756221.xlsx
-92,2021-03-17,Daily ICU occupancy,609,Japan,https://www.mhlw.go.jp/content/10900000/000756221.xlsx
-93,2021-03-24,Daily hospital occupancy,6275,Japan,https://www.mhlw.go.jp/content/10900000/000760411.xlsx
-94,2021-03-24,Daily ICU occupancy,630,Japan,https://www.mhlw.go.jp/content/10900000/000760411.xlsx
-95,2021-03-31,Daily hospital occupancy,7263,Japan,https://www.mhlw.go.jp/content/10900000/000767733.xlsx
-96,2021-03-31,Daily ICU occupancy,732,Japan,https://www.mhlw.go.jp/content/10900000/000767733.xlsx
-97,2021-04-07,Daily hospital occupancy,8602,Japan,https://www.mhlw.go.jp/content/10900000/000767730.xlsx
-98,2021-04-07,Daily ICU occupancy,843,Japan,https://www.mhlw.go.jp/content/10900000/000767730.xlsx
-99,2021-04-14,Daily hospital occupancy,9423,Japan,https://www.mhlw.go.jp/content/10900000/000770254.xlsx
-100,2021-04-14,Daily ICU occupancy,979,Japan,https://www.mhlw.go.jp/content/10900000/000770254.xlsx
-101,2021-04-21,Daily hospital occupancy,11279,Japan,https://www.mhlw.go.jp/content/10900000/000772807.xlsx
-102,2021-04-21,Daily ICU occupancy,1230,Japan,https://www.mhlw.go.jp/content/10900000/000772807.xlsx
-103,2021-04-28,Daily hospital occupancy,13089,Japan,https://www.mhlw.go.jp/content/10900000/000775968.xlsx
-104,2021-04-28,Daily ICU occupancy,1328,Japan,https://www.mhlw.go.jp/content/10900000/000775968.xlsx
-105,2021-05-05,Daily hospital occupancy,14927,Japan,https://www.mhlw.go.jp/content/10900000/000776985.xlsx
-106,2021-05-05,Daily ICU occupancy,1549,Japan,https://www.mhlw.go.jp/content/10900000/000776985.xlsx
-107,2021-05-12,Daily hospital occupancy,16620,Japan,https://www.mhlw.go.jp/content/10900000/000779837.xlsx
-108,2021-05-12,Daily ICU occupancy,1807,Japan,https://www.mhlw.go.jp/content/10900000/000779837.xlsx
-109,2021-05-19,Daily hospital occupancy,17372,Japan,https://www.mhlw.go.jp/content/10900000/000783157.xlsx
-110,2021-05-19,Daily ICU occupancy,1821,Japan,https://www.mhlw.go.jp/content/10900000/000783157.xlsx
-111,2021-05-26,Daily hospital occupancy,16581,Japan,https://www.mhlw.go.jp/content/10900000/000787595.xlsx
-112,2021-05-26,Daily ICU occupancy,1843,Japan,https://www.mhlw.go.jp/content/10900000/000787595.xlsx
-113,2021-06-02,Daily hospital occupancy,14475,Japan,https://www.mhlw.go.jp/content/10900000/000872295.xlsx
-114,2021-06-02,Daily ICU occupancy,1647,Japan,https://www.mhlw.go.jp/content/10900000/000872295.xlsx
-115,2021-06-09,Daily hospital occupancy,11888,Japan,https://www.mhlw.go.jp/content/10900000/000872293.xlsx
-116,2021-06-09,Daily ICU occupancy,1362,Japan,https://www.mhlw.go.jp/content/10900000/000872293.xlsx
-117,2021-06-16,Daily hospital occupancy,9202,Japan,https://www.mhlw.go.jp/content/10900000/000872291.xlsx
-118,2021-06-16,Daily ICU occupancy,1131,Japan,https://www.mhlw.go.jp/content/10900000/000872291.xlsx
-119,2021-06-23,Daily hospital occupancy,7337,Japan,https://www.mhlw.go.jp/content/10900000/000872288.xlsx
-120,2021-06-23,Daily ICU occupancy,942,Japan,https://www.mhlw.go.jp/content/10900000/000872288.xlsx
-121,2021-06-30,Daily hospital occupancy,6431,Japan,https://www.mhlw.go.jp/content/10900000/000872284.xlsx
-122,2021-06-30,Daily ICU occupancy,859,Japan,https://www.mhlw.go.jp/content/10900000/000872284.xlsx
-123,2021-07-07,Daily hospital occupancy,5888,Japan,https://www.mhlw.go.jp/content/10900000/000872280.xlsx
-124,2021-07-07,Daily ICU occupancy,858,Japan,https://www.mhlw.go.jp/content/10900000/000872280.xlsx
-125,2021-07-14,Daily hospital occupancy,6564,Japan,https://www.mhlw.go.jp/content/10900000/000872276.xlsx
-126,2021-07-14,Daily ICU occupancy,881,Japan,https://www.mhlw.go.jp/content/10900000/000872276.xlsx
-127,2021-07-21,Daily hospital occupancy,8174,Japan,https://www.mhlw.go.jp/content/10900000/000872274.xlsx
-128,2021-07-21,Daily ICU occupancy,995,Japan,https://www.mhlw.go.jp/content/10900000/000872274.xlsx
-129,2021-07-28,Daily hospital occupancy,10649,Japan,https://www.mhlw.go.jp/content/10900000/000872260.xlsx
-130,2021-07-28,Daily ICU occupancy,1271,Japan,https://www.mhlw.go.jp/content/10900000/000872260.xlsx
-131,2021-08-04,Daily hospital occupancy,15026,Japan,https://www.mhlw.go.jp/content/10900000/000872238.xlsx
-132,2021-08-04,Daily ICU occupancy,1605,Japan,https://www.mhlw.go.jp/content/10900000/000872238.xlsx
-133,2021-08-11,Daily hospital occupancy,18706,Japan,https://www.mhlw.go.jp/content/10900000/000872231.xlsx
-134,2021-08-11,Daily ICU occupancy,2129,Japan,https://www.mhlw.go.jp/content/10900000/000872231.xlsx
-135,2021-08-18,Daily hospital occupancy,21434,Japan,https://www.mhlw.go.jp/content/10900000/000872225.xlsx
-136,2021-08-18,Daily ICU occupancy,2591,Japan,https://www.mhlw.go.jp/content/10900000/000872225.xlsx
-137,2021-08-25,Daily hospital occupancy,24126,Japan,https://www.mhlw.go.jp/content/10900000/000872223.xlsx
-138,2021-08-25,Daily ICU occupancy,2829,Japan,https://www.mhlw.go.jp/content/10900000/000872223.xlsx
-139,2021-09-01,Daily hospital occupancy,24320,Japan,https://www.mhlw.go.jp/content/10900000/000872221.xlsx
-140,2021-09-01,Daily ICU occupancy,3034,Japan,https://www.mhlw.go.jp/content/10900000/000872221.xlsx
-141,2021-09-08,Daily hospital occupancy,22557,Japan,https://www.mhlw.go.jp/content/10900000/000872218.xlsx
-142,2021-09-08,Daily ICU occupancy,3034,Japan,https://www.mhlw.go.jp/content/10900000/000872218.xlsx
-143,2021-09-15,Daily hospital occupancy,17481,Japan,https://www.mhlw.go.jp/content/10900000/000872216.xlsx
-144,2021-09-15,Daily ICU occupancy,2456,Japan,https://www.mhlw.go.jp/content/10900000/000872216.xlsx
-145,2021-09-22,Daily hospital occupancy,12792,Japan,https://www.mhlw.go.jp/content/10900000/000872213.xlsx
-146,2021-09-22,Daily ICU occupancy,1808,Japan,https://www.mhlw.go.jp/content/10900000/000872213.xlsx
-147,2021-09-29,Daily hospital occupancy,7467,Japan,https://www.mhlw.go.jp/content/10900000/000856122.xlsx
-148,2021-09-29,Daily ICU occupancy,1142,Japan,https://www.mhlw.go.jp/content/10900000/000856122.xlsx
-149,2021-10-06,Daily hospital occupancy,4673,Japan,https://www.mhlw.go.jp/content/10900000/000856120.xlsx
-150,2021-10-06,Daily ICU occupancy,767,Japan,https://www.mhlw.go.jp/content/10900000/000856120.xlsx
-151,2021-10-13,Daily hospital occupancy,2908,Japan,https://www.mhlw.go.jp/content/10900000/000872173.xlsx
-152,2021-10-13,Daily ICU occupancy,537,Japan,https://www.mhlw.go.jp/content/10900000/000872173.xlsx
-153,2021-10-20,Daily hospital occupancy,1939,Japan,https://www.mhlw.go.jp/content/10900000/000872171.xlsx
-154,2021-10-20,Daily ICU occupancy,296,Japan,https://www.mhlw.go.jp/content/10900000/000872171.xlsx
-155,2021-10-27,Daily hospital occupancy,1265,Japan,https://www.mhlw.go.jp/content/10900000/000856083.xlsx
-156,2021-10-27,Daily ICU occupancy,196,Japan,https://www.mhlw.go.jp/content/10900000/000856083.xlsx
-157,2021-11-03,Daily hospital occupancy,964,Japan,https://www.mhlw.go.jp/content/10900000/000852179.xlsx
-158,2021-11-03,Daily ICU occupancy,140,Japan,https://www.mhlw.go.jp/content/10900000/000852179.xlsx
-159,2021-11-10,Daily hospital occupancy,755,Japan,https://www.mhlw.go.jp/content/10900000/000854425.xlsx
-160,2021-11-10,Daily ICU occupancy,134,Japan,https://www.mhlw.go.jp/content/10900000/000854425.xlsx
-161,2021-11-17,Daily hospital occupancy,626,Japan,https://www.mhlw.go.jp/content/10900000/000857272.xlsx
-162,2021-11-17,Daily ICU occupancy,96,Japan,https://www.mhlw.go.jp/content/10900000/000857272.xlsx
-163,2021-11-24,Daily hospital occupancy,529,Japan,https://www.mhlw.go.jp/content/10900000/000859258.xlsx
-164,2021-11-24,Daily ICU occupancy,79,Japan,https://www.mhlw.go.jp/content/10900000/000859258.xlsx
-165,2021-12-01,Daily hospital occupancy,421,Japan,https://www.mhlw.go.jp/content/10900000/000865443.xlsx
-166,2021-12-01,Daily ICU occupancy,54,Japan,https://www.mhlw.go.jp/content/10900000/000865443.xlsx
-167,2021-12-08,Daily hospital occupancy,362,Japan,https://www.mhlw.go.jp/content/10900000/000872068.xlsx
-168,2021-12-08,Daily ICU occupancy,40,Japan,https://www.mhlw.go.jp/content/10900000/000872068.xlsx
-169,2021-12-15,Daily hospital occupancy,416,Japan,https://www.mhlw.go.jp/content/10900000/000869008.xlsx
-170,2021-12-15,Daily ICU occupancy,35,Japan,https://www.mhlw.go.jp/content/10900000/000869008.xlsx
-171,2021-12-22,Daily hospital occupancy,603,Japan,https://www.mhlw.go.jp/content/10900000/000873645.xlsx
-172,2021-12-22,Daily ICU occupancy,69,Japan,https://www.mhlw.go.jp/content/10900000/000873645.xlsx
-173,2021-12-29,Daily hospital occupancy,1016,Japan,https://www.mhlw.go.jp/content/10900000/000877959.xlsx
-174,2021-12-29,Daily ICU occupancy,91,Japan,https://www.mhlw.go.jp/content/10900000/000877959.xlsx
-175,2022-01-05,Daily hospital occupancy,2262,Japan,https://www.mhlw.go.jp/content/10900000/000877961.xlsx
-176,2022-01-05,Daily ICU occupancy,153,Japan,https://www.mhlw.go.jp/content/10900000/000877961.xlsx
+date,hospitalized,require_ventilator_or_in_icu,source
+2020-04-28,5514,,https://www.mhlw.go.jp/content/10900000/000633758.pdf
+2020-05-07,4436,341.0,https://www.mhlw.go.jp/content/10900000/000633755.pdf
+2020-05-13,3423,251.0,https://www.mhlw.go.jp/content/10900000/000631948.pdf
+2020-05-21,2058,184.0,https://www.mhlw.go.jp/content/10900000/000633020.pdf
+2020-05-27,1369,143.0,https://www.mhlw.go.jp/content/10900000/000635319.pdf
+2020-06-03,1015,101.0,https://www.mhlw.go.jp/content/10900000/000637508.pdf
+2020-06-10,781,88.0,https://www.mhlw.go.jp/content/10900000/000639642.pdf
+2020-06-17,587,70.0,https://www.mhlw.go.jp/content/10900000/000641924.pdf
+2020-06-24,559,58.0,https://www.mhlw.go.jp/content/10900000/000644284.pdf
+2020-07-01,696,40.0,https://www.mhlw.go.jp/content/10900000/000646554.pdf
+2020-07-08,1039,36.0,https://www.mhlw.go.jp/content/10900000/000650177.pdf
+2020-07-15,1717,41.0,https://www.mhlw.go.jp/content/10900000/000650176.pdf
+2020-07-22,2744,54.0,https://www.mhlw.go.jp/content/10900000/000652009.pdf
+2020-07-29,4034,92.0,https://www.mhlw.go.jp/content/10900000/000655343.pdf
+2020-08-05,5116,117.0,https://www.mhlw.go.jp/content/10900000/000657845.pdf
+2020-08-12,6009,192.0,https://www.mhlw.go.jp/content/10900000/000659470.pdf
+2020-08-19,5973,277.0,https://www.mhlw.go.jp/content/10900000/000661845.pdf
+2020-08-26,5576,333.0,https://www.mhlw.go.jp/content/10900000/000664827.pdf
+2020-09-02,4994,324.0,https://www.mhlw.go.jp/content/10900000/000694899.pdf
+2020-09-09,4174,315.0,https://www.mhlw.go.jp/content/10900000/000694897.pdf
+2020-09-16,3754,316.0,https://www.mhlw.go.jp/content/10900000/000694896.pdf
+2020-09-23,3601,310.0,https://www.mhlw.go.jp/content/10900000/000694895.pdf
+2020-09-30,3249,292.0,https://www.mhlw.go.jp/content/10900000/000694894.pdf
+2020-10-07,2963,296.0,https://www.mhlw.go.jp/content/10900000/000694893.pdf
+2020-10-14,3040,317.0,https://www.mhlw.go.jp/content/10900000/000694892.pdf
+2020-10-21,2966,279.0,https://www.mhlw.go.jp/content/10900000/000694891.pdf
+2020-10-28,3108,290.0,https://www.mhlw.go.jp/content/10900000/000694889.pdf
+2020-11-04,3495,319.0,https://www.mhlw.go.jp/content/10900000/000694888.pdf
+2020-11-11,4484,388.0,https://www.mhlw.go.jp/content/10900000/000694900.pdf
+2020-11-18,5951,483.0,https://www.mhlw.go.jp/content/10900000/000697184.pdf
+2020-11-25,7826,682.0,https://www.mhlw.go.jp/content/10900000/000699463.pdf
+2020-12-02,8488,785.0,https://www.mhlw.go.jp/content/10900000/000703096.pdf
+2020-12-09,9222,842.0,https://www.mhlw.go.jp/content/10900000/000705462.pdf
+2020-12-16,10047,3575.0,https://www.mhlw.go.jp/content/10900000/000707318.pdf
+2020-12-23,10470,1017.0,https://www.mhlw.go.jp/content/10900000/000717219.xlsx
+2020-12-30,11585,1106.0,https://www.mhlw.go.jp/content/10900000/000717220.xlsx
+2021-01-06,13093,1224.0,https://www.mhlw.go.jp/content/10900000/000721071.xlsx
+2021-01-13,14825,1424.0,https://www.mhlw.go.jp/content/10900000/000721104.xlsx
+2021-01-20,14724,1505.0,https://www.mhlw.go.jp/content/10900000/000731213.xlsx
+2021-01-27,14417,1569.0,https://www.mhlw.go.jp/content/10900000/000731216.xlsx
+2021-02-03,13489,1439.0,https://www.mhlw.go.jp/content/10900000/000735169.xlsx
+2021-02-10,11325,1232.0,https://www.mhlw.go.jp/content/10900000/000738342.xlsx
+2021-02-17,9575,1020.0,https://www.mhlw.go.jp/content/10900000/000749641.xlsx
+2021-02-24,8032,820.0,https://www.mhlw.go.jp/content/10900000/000749622.xlsx
+2021-03-03,6683,739.0,https://www.mhlw.go.jp/content/10900000/000749619.xlsx
+2021-03-10,5947,659.0,https://www.mhlw.go.jp/content/10900000/000753067.xlsx
+2021-03-17,5895,609.0,https://www.mhlw.go.jp/content/10900000/000756221.xlsx
+2021-03-24,6275,630.0,https://www.mhlw.go.jp/content/10900000/000760411.xlsx
+2021-03-31,7263,732.0,https://www.mhlw.go.jp/content/10900000/000767733.xlsx
+2021-04-07,8602,843.0,https://www.mhlw.go.jp/content/10900000/000767730.xlsx
+2021-04-14,9423,979.0,https://www.mhlw.go.jp/content/10900000/000770254.xlsx
+2021-04-21,11279,1230.0,https://www.mhlw.go.jp/content/10900000/000772807.xlsx
+2021-04-28,13089,1328.0,https://www.mhlw.go.jp/content/10900000/000775968.xlsx
+2021-05-05,14927,1549.0,https://www.mhlw.go.jp/content/10900000/000776985.xlsx
+2021-05-12,16620,1807.0,https://www.mhlw.go.jp/content/10900000/000779837.xlsx
+2021-05-19,17372,1821.0,https://www.mhlw.go.jp/content/10900000/000783157.xlsx
+2021-05-26,16581,1843.0,https://www.mhlw.go.jp/content/10900000/000787595.xlsx
+2021-06-02,14475,1647.0,https://www.mhlw.go.jp/content/10900000/000872295.xlsx
+2021-06-09,11888,1362.0,https://www.mhlw.go.jp/content/10900000/000872293.xlsx
+2021-06-16,9202,1131.0,https://www.mhlw.go.jp/content/10900000/000872291.xlsx
+2021-06-23,7337,942.0,https://www.mhlw.go.jp/content/10900000/000872288.xlsx
+2021-06-30,6431,859.0,https://www.mhlw.go.jp/content/10900000/000872284.xlsx
+2021-07-07,5888,858.0,https://www.mhlw.go.jp/content/10900000/000872280.xlsx
+2021-07-14,6564,881.0,https://www.mhlw.go.jp/content/10900000/000872276.xlsx
+2021-07-21,8174,995.0,https://www.mhlw.go.jp/content/10900000/000872274.xlsx
+2021-07-28,10649,1271.0,https://www.mhlw.go.jp/content/10900000/000872260.xlsx
+2021-08-04,15026,1605.0,https://www.mhlw.go.jp/content/10900000/000872238.xlsx
+2021-08-11,18706,2129.0,https://www.mhlw.go.jp/content/10900000/000872231.xlsx
+2021-08-18,21434,2591.0,https://www.mhlw.go.jp/content/10900000/000872225.xlsx
+2021-08-25,24126,2829.0,https://www.mhlw.go.jp/content/10900000/000872223.xlsx
+2021-09-01,24320,3034.0,https://www.mhlw.go.jp/content/10900000/000872221.xlsx
+2021-09-08,22557,3034.0,https://www.mhlw.go.jp/content/10900000/000872218.xlsx
+2021-09-15,17481,2456.0,https://www.mhlw.go.jp/content/10900000/000872216.xlsx
+2021-09-22,12792,1808.0,https://www.mhlw.go.jp/content/10900000/000872213.xlsx
+2021-09-29,7467,1142.0,https://www.mhlw.go.jp/content/10900000/000856122.xlsx
+2021-10-06,4673,767.0,https://www.mhlw.go.jp/content/10900000/000856120.xlsx
+2021-10-13,2908,537.0,https://www.mhlw.go.jp/content/10900000/000872173.xlsx
+2021-10-20,1939,296.0,https://www.mhlw.go.jp/content/10900000/000872171.xlsx
+2021-10-27,1265,196.0,https://www.mhlw.go.jp/content/10900000/000856083.xlsx
+2021-11-03,964,140.0,https://www.mhlw.go.jp/content/10900000/000852179.xlsx
+2021-11-10,755,134.0,https://www.mhlw.go.jp/content/10900000/000854425.xlsx
+2021-11-17,626,96.0,https://www.mhlw.go.jp/content/10900000/000857272.xlsx
+2021-11-24,529,79.0,https://www.mhlw.go.jp/content/10900000/000859258.xlsx
+2021-12-01,421,54.0,https://www.mhlw.go.jp/content/10900000/000865443.xlsx
+2021-12-08,362,40.0,https://www.mhlw.go.jp/content/10900000/000872068.xlsx
+2021-12-15,416,35.0,https://www.mhlw.go.jp/content/10900000/000869008.xlsx
+2021-12-22,603,69.0,https://www.mhlw.go.jp/content/10900000/000873645.xlsx
+2021-12-29,1016,91.0,https://www.mhlw.go.jp/content/10900000/000877959.xlsx
+2022-01-05,2262,153.0,https://www.mhlw.go.jp/content/10900000/000877961.xlsx
