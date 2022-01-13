@@ -61,13 +61,13 @@ def process_file(url: str, date: str, debug: bool) -> dict:
             if critical_col is None and "うち重症者数" in obj:
                 critical_col = df[col]
             # In these dates, tabula failed to recognize the right column header.
-            if date >= '2020-08-26' and date <= '2020-11-11':
+            if date >= '2020-08-26' and date <= '2020-11-11' or date == '2020-12-16':
                 if '最終フェーズにおける即応病床(計画)数(注5)' in obj:
                     critical_col = df[col]
             if date == '2020-05-13':
                 if '(4)自宅療養者数' == obj:
                     critical_col = df[col]
-            if date >= '2020-11-18' and date <= '2020-12-16':
+            if date >= '2020-11-18' and date <= '2020-12-09':
                 if '確保病床数(注4)' == obj:
                     critical_col = df[col]
 
