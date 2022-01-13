@@ -13,13 +13,18 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 METADATA = {
-    "source_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html",
-    "source_url_ref": "https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html",
-    "source_name": "Ministry of Health, Labour and Welfare",
-    "entity": "Japan",
+    "source_url":
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html",
+    "source_url_ref":
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/newpage_00023.html",
+    "source_name":
+        "Ministry of Health, Labour and Welfare",
+    "entity":
+        "Japan",
 }
 
 DATE_RE = re.compile(r"(20[0-9]*?)年(.*?)月(.*?)日")
+
 
 def handle_highcare_note(data: str) -> str:
     assert '注' in data
@@ -27,12 +32,16 @@ def handle_highcare_note(data: str) -> str:
     assert m
     return m.group(1)
 
+
 def process_file(url: str, date: str, debug: bool) -> dict:
     hospitalized_col = None
     critical_col = None
     if url.endswith('.pdf'):
-        tables = tabula.read_pdf(
-                url, pages=1, silent=True, lattice=True, multiple_tables=True)
+        tables = tabula.read_pdf(url,
+                                 pages=1,
+                                 silent=True,
+                                 lattice=True,
+                                 multiple_tables=True)
         max_len = 0
         for table in tables:
             if len(table) > max_len:
@@ -62,38 +71,33 @@ def process_file(url: str, date: str, debug: bool) -> dict:
                 if '確保病床数(注4)' == obj:
                     critical_col = df[col]
 
-    ret = []
+    hospitalized_num = None
+    critical_num = None
 
     if hospitalized_col is not None:
         hospitalized_col = hospitalized_col.dropna()
         hospitalized = str(hospitalized_col.iloc[-1]).replace(',', '')
         try:
-            ret.append({
-                "date": date,
-                "indicator": "Daily hospital occupancy",
-                "value": int(hospitalized),
-                "entity": METADATA["entity"],
-                "source": url,
-            })
-        except ValueError:
-            pass
-    
-    if critical_col is not None:
-        critical_col = critical_col.dropna()
-        critical = str(critical_col.iloc[-1]).replace(',', '')
-        if date in ['2020-08-26' , '2020-09-16']:
-            critical = handle_highcare_note(critical)
-        try:
-            ret.append({
-                "date": date,
-                "indicator": "Daily ICU occupancy",
-                "value": int(critical),
-                "entity": METADATA["entity"],
-                "source": url,
-            })
+            hospitalized_num = int(hospitalized)
         except ValueError:
             pass
 
+    if critical_col is not None:
+        critical_col = critical_col.dropna()
+        critical = str(critical_col.iloc[-1]).replace(',', '')
+        if date in ['2020-08-26', '2020-09-16']:
+            critical = handle_highcare_note(critical)
+        try:
+            critical_num = int(critical)
+        except ValueError:
+            pass
+
+    ret = {
+        "date": date,
+        "hospitalized": hospitalized_num,
+        "require_ventilator_or_in_icu": critical_num,
+        "source": url,
+    }
 
     if debug:
         print(date, url, '\n', ret, file=sys.stderr)
@@ -105,7 +109,8 @@ def main(debug=False):
     os.makedirs('cache', exist_ok=True)
     hashes = set()
     if os.path.exists('cache/mhlw_hospitalization.hash'):
-        hashes = set(open('cache/mhlw_hospitalization.hash').read().strip().split('\n'))
+        hashes = set(
+            open('cache/mhlw_hospitalization.hash').read().strip().split('\n'))
     content = requests.get(METADATA["source_url"]).content
     newhash = hashlib.sha1(content).hexdigest()
     response = content.decode('utf-8')
@@ -130,17 +135,22 @@ def main(debug=False):
     for report in reversed(groups):
         if '新型コロナウイルス感染症患者の療養状況' not in report:
             continue
-        year, month, day  = DATE_RE.search(report).groups()
-        links = sorted([a.get('href') for a in BeautifulSoup(report, features='lxml').findAll('a')])
+        year, month, day = DATE_RE.search(report).groups()
+        links = sorted([
+            a.get('href')
+            for a in BeautifulSoup(report, features='lxml').findAll('a')
+        ])
         if links[-1].endswith('.xlsx'):
             path = links[-1]
         else:
             path = links[0]
-        date = str(datetime.date(year=int(year), month=int(month), day=int(day)))
-        records.extend(process_file("https://www.mhlw.go.jp" + path, date, debug))
+        date = str(datetime.date(year=int(year), month=int(month),
+                                 day=int(day)))
+        records.append(
+            process_file("https://www.mhlw.go.jp" + path, date, debug))
 
     df = pd.DataFrame.from_records(records)
-    csv = df.to_csv()
+    csv = df.to_csv(index=False)
     open('data/mhlw_hospitalization.csv', 'w').write(csv)
     hashes.add(newhash)
     open('cache/mhlw_hospitalization.hash', 'w').write('\n'.join(list(hashes)))
