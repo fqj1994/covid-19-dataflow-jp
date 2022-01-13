@@ -32,7 +32,7 @@ date,hospitalized,require_ventilator_or_in_icu,source
 2020-11-25,7826,682.0,https://www.mhlw.go.jp/content/10900000/000699463.pdf
 2020-12-02,8488,785.0,https://www.mhlw.go.jp/content/10900000/000703096.pdf
 2020-12-09,9222,842.0,https://www.mhlw.go.jp/content/10900000/000705462.pdf
-2020-12-16,10047,3575.0,https://www.mhlw.go.jp/content/10900000/000707318.pdf
+2020-12-16,10047,950.0,https://www.mhlw.go.jp/content/10900000/000707318.pdf
 2020-12-23,10470,1017.0,https://www.mhlw.go.jp/content/10900000/000717219.xlsx
 2020-12-30,11585,1106.0,https://www.mhlw.go.jp/content/10900000/000717220.xlsx
 2021-01-06,13093,1224.0,https://www.mhlw.go.jp/content/10900000/000721071.xlsx
