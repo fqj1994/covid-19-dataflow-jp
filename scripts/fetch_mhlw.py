@@ -153,7 +153,7 @@ def main(debug=False):
     csv = df.to_csv(index=False)
     open('data/mhlw_hospitalization.csv', 'w').write(csv)
     hashes.add(newhash)
-    open('cache/mhlw_hospitalization.hash', 'w').write('\n'.join(list(hashes)))
+    open('cache/mhlw_hospitalization.hash', 'w').write('\n'.join(list(sorted(hashes))))
 
 
 if __name__ == "__main__":
