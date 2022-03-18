@@ -140,9 +140,11 @@ def main(debug=False):
             a.get('href')
             for a in BeautifulSoup(report, features='lxml').findAll('a')
         ])
-        if links[-1].endswith('.xlsx'):
-            path = links[-1]
-        else:
+        path = None
+        for link in links:
+            if link.endswith('.xlsx'):
+                path = link
+        if not path:
             path = links[0]
         date = str(datetime.date(year=int(year), month=int(month),
                                  day=int(day)))
