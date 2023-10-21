@@ -58,6 +58,8 @@ def process_file(url: str, date: str, debug: bool) -> dict:
             obj = obj.replace('\n', '').replace('\r', '').replace(' ', '')
             if hospitalized_col is None and "入院者数" in obj:
                 hospitalized_col = df[col]
+            if hospitalized_col is None and "在院者数" in obj and date >= '2023-10-04':
+                hospitalized_col = df[col]
             if critical_col is None and "うち重症者数" in obj:
                 critical_col = df[col]
             # In these dates, tabula failed to recognize the right column header.
